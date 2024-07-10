@@ -6,7 +6,6 @@
     --secondary-color: #14d300 ;
     --accent1-color: #8a4111;
     --accent2-color: white;
-  
     /* change the values below to your chosen font(s) */
     --heading-font: "Roboto Slab";
     --paragraph-font: Montserrat, Helvetica, sans-serif;
@@ -110,32 +109,32 @@ nav a:hover{
 
 /* Caption of Modal Image */
 #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
 }
 
 /* Add Animation */
 .modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
 }
 
 /* The Close Button */

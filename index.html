@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wade Davenport</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="main.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
             <a href="projects.html">Projects</a>
-            <!-- <a href="contact-me.html">Contact Me</a> -->
+            <a href="contact-me.html">Contact Me</a>
         </nav>
     </header>
     <main>
@@ -23,7 +24,7 @@
             <div class="intro">
                 <h2>Who Am I</h2>
                 <img id="family" src="images/Family_02.jpg" alt="Picture of my family">
-                <div id="myModal" class="modal" src="images/Family_02.jpg" alt="Picture of my family">
+                <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
                     <div id="caption"></div>
@@ -43,17 +44,16 @@
                 <h2>Coding Skills</h2>
                 <img class="camping" src="images/camping.jpg" alt="picture of a campground">
                 <p>I am a Computer Science Major at BYU-Idaho. I have experience in the following Programming languages:</p>
-                <ul>
+                <ul id="skills-list">
                     <li>Python</li>
                     <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>R</li>
                 </ul>
+                <button id="add-skill-btn">Add A Skill</button>
             </div>
         </div>
-        
-
     </main>
     <footer>
         <p id="copyright">Copyright 2024</p>
@@ -64,32 +64,7 @@
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
-        </div>
-        
-        
+        </div>  
     </footer>
-    
-    <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("family");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-    </script>
 </body>
 </html>
